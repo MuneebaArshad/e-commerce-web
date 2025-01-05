@@ -3,47 +3,61 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       {/* Hero Section */}
       <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-16 py-8">
         <div className="md:w-2/4 text-xl md:text-2xl text-center md:text-left text-custom-purple">
           A brand built on the love of craftsmanship, quality, and outstanding customer service
         </div>
-        <div className="mt-6 md:mt-0">
+        <div className="flex flex-col md:flex-row md:mt-0 mt-6 justify-center items-center w-full md:w-auto space-y-4 md:space-y-0">
+          <div className="md:hidden block text-center text-custom-purple">
+            A brand built on the love of craftsmanship, quality, and outstanding customer service
+          </div>
           <button className="bg-gray-200 h-12 w-40 rounded-sm text-custom-purple">
             View our products
           </button>
+          <div className="md:hidden block text-center text-custom-purple mt-4">
+            Join the club and get the benefits
+          </div>
         </div>
       </div>
 
       {/* Story Section */}
-      <div className="flex flex-col md:flex-row w-full h-auto items-center justify-around px-4 py-16">
-        <div className="bg-custom-purple w-full md:w-2/5 text-white p-8 md:p-16 mb-8 md:mb-0">
-          <h1 className="text-xl md:text-2xl">It started with a small idea</h1>
-          <p className="mt-6">
-            A global brand with local beginnings, our story began in a small studio in South London in early 2014.
-          </p>
-          <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-white">
-            View Collection
-          </button>
+      <div className="flex flex-col md:flex-row w-full h-auto items-center justify-between px-4 py-16 gap-x-4">
+        {/* Text Section */}
+        <div className="bg-custom-purple flex items-center justify-center w-full md:w-1/2 h-[400px] text-white p-8 md:p-16">
+          <div>
+            <h1 className="text-xl md:text-2xl">It started with a small idea</h1>
+            <p className="mt-6">
+              A global brand with local beginnings, our story began in a small studio in South London in early 2014.
+            </p>
+            <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-white">
+              View Collection
+            </button>
+          </div>
         </div>
-        <div className="w-full md:w-2/5">
+        {/* Image Section */}
+        <div className="flex items-center justify-center w-full md:w-1/2 h-[400px]">
           <img
             src="/images/About main.png"
             alt="About main"
-            className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+            className="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
           />
         </div>
       </div>
 
       {/* Service Section */}
-      <div className="flex flex-col md:flex-row w-full h-auto items-center px-4 py-16 space-y-8 md:space-y-0">
-        <img
-          src="/images/About second.png"
-          alt="Service"
-          className="w-full md:w-2/5 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
-        />
-        <div className="border-2 bg-slate-200 w-full md:w-3/5 p-8 md:p-20">
+      <div className="flex flex-col md:flex-row w-full h-auto items-center px-4 py-16 gap-x-8 space-y-8 md:space-y-0">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 h-[400px] flex items-center justify-center">
+          <img
+            src="/images/About second.png"
+            alt="Service"
+            className="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+          />
+        </div>
+        {/* Text Section */}
+        <div className="border-2 bg-slate-200 w-full md:w-1/2 h-[400px] p-8 md:p-20 flex flex-col justify-center">
           <h1 className="text-xl md:text-2xl text-custom-purple">
             Our service isn&lsquo;t just personal, it&lsquo;s actually hyper-personally exquisite
           </h1>
@@ -56,45 +70,40 @@ const About = () => {
         </div>
       </div>
 
-      {/* Features Section */}
-      <div className="w-full h-auto pb-16">
-        <h1 className="text-center text-custom-purple text-xl">What makes our brand different</h1>
-        <div className="flex flex-wrap justify-center md:justify-evenly px-4 py-10 gap-8">
-          {[
-            {
-              img: "/images/Delivery.png",
-              title: "Next day as standard",
-              desc: "Order before 3pm and get your order the next day as standard",
-            },
-            {
-              img: "/images/check.png",
-              title: "Made by true artisans",
-              desc: "Handmade crafted goods made with real passion and craftsmanship",
-            },
-            {
-              img: "/images/Purchase.png",
-              title: "Unbeatable prices",
-              desc: "For our materials and quality you won’t find better prices anywhere",
-            },
-            {
-              img: "/images/Sprout.png",
-              title: "Recycled packaging",
-              desc: "We use 100% recycled materials to ensure our footprint is more manageable",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-gray-200 w-72 h-auto rounded-sm px-6 py-8 text-center"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="mx-auto transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
-              />
-              <h1 className="text-custom-purple text-lg mt-4">{item.title}</h1>
-              <p className="text-custom-purple mt-4">{item.desc}</p>
-            </div>
-          ))}
+      {/* Difference Section */}
+      <div className="flex flex-col items-center w-full py-16 bg-gray-50">
+        <h1 className="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">
+          What makes our brand different
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full max-w-6xl px-4">
+          {/* Card 1 */}
+          <div className="flex flex-col items-center text-center bg-white p-8 shadow-md rounded-md w-full">
+            <h2 className="text-lg font-semibold text-gray-800">Next day as standard</h2>
+            <p className="text-gray-600 mt-2">
+              Order before 3pm and get your order the next day as standard.
+            </p>
+          </div>
+          {/* Card 2 */}
+          <div className="flex flex-col items-center text-center bg-white p-8 shadow-md rounded-md w-full">
+            <h2 className="text-lg font-semibold text-gray-800">Made by true artisans</h2>
+            <p className="text-gray-600 mt-2">
+              Handmade crafted goods made with real passion and craftsmanship.
+            </p>
+          </div>
+          {/* Card 3 */}
+          <div className="flex flex-col items-center text-center bg-white p-8 shadow-md rounded-md w-full">
+            <h2 className="text-lg font-semibold text-gray-800">Unbeatable prices</h2>
+            <p className="text-gray-600 mt-2">
+              For our materials and quality, you won’t find better prices anywhere.
+            </p>
+          </div>
+          {/* Card 4 */}
+          <div className="flex flex-col items-center text-center bg-white p-8 shadow-md rounded-md w-full">
+            <h2 className="text-lg font-semibold text-gray-800">Recycled packaging</h2>
+            <p className="text-gray-600 mt-2">
+              We use 100% recycled to ensure our footprint is more manageable.
+            </p>
+          </div>
         </div>
       </div>
 

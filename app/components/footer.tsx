@@ -32,30 +32,31 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Section */}
-          <div className="text-gray-500 w-full sm:w-auto">
-            <h1 className="text-lg md:text-xl font-bold">Our Company</h1>
-            <div className='space-y-2'>
-              <h1><Link href='/about'>About us</Link></h1>
-              <h1><Link href={'/'}>Vacancies</Link></h1>
-              <h1><Link href={'/'}>Contact us</Link></h1>
-              <h1><Link href={'/'}>Privacy</Link></h1>
-              <h1><Link href={'/'}>Return policy</Link></h1>
+          {/* Company and Mailing List Section */}
+          <div className="flex flex-col md:flex-row md:justify-between text-gray-500 w-full sm:w-auto">
+            <div>
+              <h1 className="text-lg md:text-xl font-bold">Our Company</h1>
+              <div className='space-y-2'>
+                <h1><Link href={"/about"}>About us</Link></h1>
+                <h1><Link href={'/'}>Vacancies</Link></h1>
+                <h1><Link href={'/'}>Contact us</Link></h1>
+                <h1><Link href={'/'}>Privacy</Link></h1>
+                <h1><Link href={'/'}>Return policy</Link></h1>
+              </div>
             </div>
-          </div>
 
-          {/* Mailing List Section */}
-          <div className="text-white w-full sm:w-auto">
-            <h1 className="text-lg md:text-xl font-bold">Join our mailing list</h1>
-            <div className='mt-4'>
-              <input
-                type="text"
-                placeholder="your@email.com"
-                className='w-full sm:w-[250px] lg:w-[300px] h-[48px] p-2 bg-transparent opacity-35 border border-white rounded-md'
-              />
-              <button className='mt-2 sm:mt-0 sm:ml-2 w-full sm:w-[100px] h-[48px] bg-white text-[#2A254B] rounded-md'>
-                Sign up
-              </button>
+            <div className="text-white mt-6 md:mt-0 md:ml-12">
+              <h1 className="text-lg md:text-xl font-bold">Join our mailing list</h1>
+              <div className='mt-4'>
+                <input
+                  type="text"
+                  placeholder="your@email.com"
+                  className='w-full sm:w-[250px] lg:w-[300px] h-[48px] p-2 bg-transparent opacity-35 border border-white rounded-md'
+                />
+                <button className='mt-2 sm:mt-0 sm:ml-2 w-full sm:w-[100px] h-[48px] bg-white text-[#2A254B] rounded-md'>
+                  Sign up
+                </button>
+              </div>
             </div>
           </div>
         </div>

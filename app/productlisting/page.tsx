@@ -31,7 +31,7 @@ const ProductListing = () => {
 
   return (
     <>
-      <section>
+     <section>
         <div className="px-4 md:px-8 lg:px-12 py-8 md:py-12">
           {/* Main Product Section */}
           <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -140,7 +140,7 @@ const ProductListing = () => {
             })}
           </div>
         </div>
-      </section>
+      </section> 
     </>
   );
 };

@@ -9,7 +9,7 @@ const Touch = () => {
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-[720px] h-auto px-4 md:px-12 py-8 flex flex-col justify-between">
               <div>
-                <h1 className="text-2xl md:text-2xl">
+                <h1 className="text-xl md:text-2xl">
                   From a studio in London to a global brand with <br /> over 400 outlets
                 </h1>
                 <h1 className="py-6 text-lg md:text-xl">
@@ -23,7 +23,7 @@ const Touch = () => {
                 </h1>
               </div>
               <div className="my-10">
-                <button className="bg-[#F9F9F9] py-4 px-4 rounded-[5px] text-[#2A254B]">
+                <button className="bg-[#f0eeee] py-4 px-4 rounded-[5px] text-[#2A254B]">
                   Get in touch
                 </button>
               </div>
