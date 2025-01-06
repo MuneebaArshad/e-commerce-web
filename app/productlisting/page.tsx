@@ -4,6 +4,7 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { LuSprout } from "react-icons/lu";
 import { MdOutlinePriceChange } from "react-icons/md";
+import Benefit from '../components/benefit';
 
 const ProductListing = () => {
   const features = [
@@ -30,7 +31,7 @@ const ProductListing = () => {
   ];
 
   return (
-    <>
+    <div id="product">
      <section>
         <div className="px-4 md:px-8 lg:px-12 py-8 md:py-12">
           {/* Main Product Section */}
@@ -141,7 +142,9 @@ const ProductListing = () => {
           </div>
         </div>
       </section> 
-    </>
+
+      <Benefit />
+      </div>
   );
 };
 

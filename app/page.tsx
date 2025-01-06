@@ -12,14 +12,15 @@ import ProductListing from "./productlisting/page";
 export default function Home() {
   return (
    <>
+    
    <Hero />
    <Brand />
    <Ceramics />
    <Product />
    <Benefit />
    <Touch />
-<ProductListing/>
-   
+ 
+  
 
    </>
   );
